@@ -25,10 +25,10 @@ Then add the appropriate Caddy json config:
 or Caddyfile equivalent:
 
 ```
-tls {
-  dns porkbun {
-    api_key {env.PORKBUN_API_KEY}
-	api_secret_key {env.PORKBUN_API_SECRET_KEY}
-  }
+{
+    acme_dns porkbun {
+        api_key {env.PORKBUN_API_KEY}
+        api_secret_key {env.PORKBUN_API_SECRET_KEY}
+    }
 }
 ```
